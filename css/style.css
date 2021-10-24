@@ -1,3 +1,10 @@
+:root{
+    --color1: #CE2B37;
+    --color2: #009246;
+    --color3: #F1F2F1;
+    --color4: #1d1f1d;
+}
+
 *,
 *::after,
 *::before{
@@ -10,7 +17,7 @@
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 1rem;  /* Preferred icon size */
+    font-size: 1rem;
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -18,22 +25,28 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
-    /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
     font-feature-settings: 'liga';
 }
 
 .text{
     display: inline-block;   
     padding: 0 .25rem; 
+}
+
+.button{
+    cursor: pointer;
+    background-color: var(--color4);
+    border-radius: 25px;
+    box-shadow: 1px 2px 6px var(--color1),
+    -1px -2px 6px var(--color1);
+    padding: .75rem 1rem;
+    border: 1px solid var(--color1);
+    margin: 0 .5rem;
+    color: var(--color3);
+    font-weight: 600;
 }
 
 .container{
@@ -45,26 +58,27 @@
 
     background: url(../images/home-back.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 
-    color: #FFF;
+    color: var(--color3);
 }
-
-/* header,
-nav,
-main{
-    border: 1px solid red;
-} */
 
 header{
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    margin: 8px 0;
 }
 
 header p,
 header a{
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: .8rem;
     display: flex;
     align-items: center;
+    color: var(--color3);
 }
 
 header p{
@@ -77,12 +91,21 @@ header a{
 }
 
 nav{
-    padding: 0 2rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    /* background-color: #ffd900a8; */
+    background-color: var(--color2);
+}
+
+nav .menu{
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+nav .menuItens{
+    display: none;
 }
 
 nav ul{
@@ -95,4 +118,14 @@ nav ul a{
 
 nav ul li{
     list-style: none;
+}
+
+main{
+    text-align: center;
+    padding: 0 1rem;
+}
+
+main h2{
+    margin-top: .25rem;
+    margin-bottom: 1rem;
 }
