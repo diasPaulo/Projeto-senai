@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.text{
+    display: inline-block;   
+    padding: 0 .25rem; 
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 50px 1fr;
+    align-items: center;
+
+    background: url(../images/home-back.jpg);
+    background-size: cover;
+
+    color: #FFF;
+}
+
+/* header,
+nav,
+main{
+    border: 1px solid red;
+} */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header p,
+header a{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+header p{
+    padding: 0 1rem;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* background-color: #ffd900a8; */
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul a{
+    margin: 0 1rem;
+}
+
+nav ul li{
+    list-style: none;
+}
