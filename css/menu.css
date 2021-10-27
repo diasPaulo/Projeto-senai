@@ -4,21 +4,16 @@
     display: none;
 }
 
-#home nav{
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    /* background-color: #009247c9; */
-    background-color: #F1F2F1c9;
-}
-
 nav{
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     height: 100%;
     background-color: #00924777;
+}
+
+#home nav{
+    background-color: #F1F2F1c9;
 }
 
 nav a{

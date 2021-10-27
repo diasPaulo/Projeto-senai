@@ -110,6 +110,24 @@ main h1 .logo{
     font-size: 3rem;
 }
 
+/* #about main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about main section article{
+    margin: 8px 0;
+}
+
+#about main section article:first-child{
+    transform: rotate(-90deg);
+}
+
+#about main section article img{
+    height: 100vw;
+} */
+
 @media (min-width: 992px){
     header{
         justify-content: flex-end;
@@ -126,9 +144,29 @@ main h1 .logo{
         text-align: left;
     }
 
-    main section{
-        background: url(../images/about.jpg);
-        background-size: cover;
-        height: 100vh;
+    #about main section{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    #about main section article{
+        margin: 0 8px;
+    }
+
+    #about main section article p{
+        margin: 1rem 0;
+    }
+
+    #about main section article:last-child{
+        width: 75ch;
+    }
+
+    #about main section .image{
+        background: url(../images/about2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 700px;
+        width: 450px;
     }
 }
