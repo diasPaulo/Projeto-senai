@@ -1,0 +1,61 @@
+@import url(./colors.css);
+
+.logo{
+    font-family: 'Italianno', cursive;
+    font-size: 4rem;
+}
+
+body{
+    background: url(../images/home-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+.container{
+    align-items: center;
+    color: var(--color3);
+}
+
+header p{
+    color: var(--color3);
+    text-shadow: 1px 1px 2px var(--color4),
+        1px -1px 2px var(--color4),
+        -1px 1px 2px var(--color4),
+        -1px -1px 2px var(--color4);
+}
+
+header a{
+    color: var(--color3);
+    text-shadow: 1px 1px 2px var(--color4),
+        1px -1px 2px var(--color4),
+        -1px 1px 2px var(--color4),
+        -1px -1px 2px var(--color4);
+}
+
+main h1{
+    text-shadow: 1px 1px 4px var(--color4),
+    -1px -1px 4px var(--color4),
+    -1px 1px 4px var(--color4),
+    1px -1px 4px var(--color4);
+}
+
+main h2{
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px var(--color4),
+    -1px -1px 4px var(--color4),
+    -1px 1px 4px var(--color4),
+    1px -1px 4px var(--color4);
+}
+
+@media (min-width: 992px){
+    main h1{
+        font-size: 3rem;
+    }
+
+    main h2{
+        font-size: 2rem;
+    }
+}

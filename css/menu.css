@@ -1,0 +1,140 @@
+@import url(./colors.css);
+
+#chkMenu{
+    display: none;
+}
+
+nav{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #009247c9;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color3);
+}
+
+nav .left{
+    height: 4rem;
+    margin-top: -6px;
+}
+
+nav .left a h1{
+    font-family: 'Italianno', cursive;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px var(--color4),
+        -1px -1px 2px var(--color4);
+}
+
+nav .right{
+    align-self: center;
+}
+
+nav .menu{
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+nav .menuItens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menuContent{
+    display: none;
+}
+
+#chkMenu:checked ~ .right .menu{
+    display: none;
+}
+
+#chkMenu:checked ~ .right .menuContent{
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 4px;
+    right: 4px;
+
+    display: initial;
+
+    height: calc(100vh - 16px);
+    width: calc(100vw - 8px);
+
+    background-color: #1d1f1ddd;
+    border-radius: 25px;
+}
+
+#chkMenu:checked ~ .right .menuContent #closeChkMenu{
+    position: absolute;
+    font-size: 2rem;
+    top: 40px;
+    right: 16px;
+}
+
+#chkMenu:checked ~ .right .menuContent .menuItens{
+    height: 100%;
+    margin: auto;
+}
+
+#chkMenu:checked ~ .right .menuContent .menuItens .button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 2px var(--color3),
+    1px -1px 2px var(--color3),
+    -1px 1px 2px var(--color3),
+    -1px -1px 2px var(--color3);
+    border: var(--color3);
+    margin: .5rem 0;
+}
+
+#chkMenu:checked ~ .right .menuContent .menuItens a{
+    margin: .5rem 0;
+}
+
+#chkMenu:checked ~ .right .menuContent .menuItens a li{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px var(--color4),
+    -1px -1px 4px var(--color4);
+}
+
+nav ul a{
+    margin: 0 1rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+@media (min-width: 992px){
+    nav{
+        padding: 0 5%;
+    }
+
+    nav .right .menu,
+    #closeChkMenu{
+        display: none;
+    }
+
+    nav .right .menuContent{
+        display: initial;
+    }
+
+    nav .right .menuContent .menuItens{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav .right .menuContent .menuItens a{
+        margin: 0 8px;
+        font-size: 1.125rem;
+        text-shadow: 1px 1px 2px var(--color4),
+        1px -1px 2px var(--color4),
+        -1px 1px 2px var(--color4),
+        -1px -1px 2px var(--color4);
+    }
+}
