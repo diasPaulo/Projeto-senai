@@ -9,8 +9,9 @@
 }
 
 .logo{
-    font-family: 'Italianno', cursive;
-    font-size: 2.5rem;
+    font-family: 'Caveat', serif;
+    font-weight: 500;
+    font-size: 3.75rem;
 }
 
 .material-icons {
@@ -51,9 +52,12 @@
     height: 100vh;
     display: grid;
     grid-template-rows: auto 50px 1fr;
-    /* align-items: center; */
 
     color: var(--color4);
+}
+
+body{
+    background-color: var(--color3);
 }
 
 header{
@@ -96,6 +100,16 @@ main{
     padding: 0 1rem;
 }
 
+main h1{
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+main h1 .logo{
+    font-weight: 800;
+    font-size: 3rem;
+}
+
 @media (min-width: 992px){
     header{
         justify-content: flex-end;
@@ -110,5 +124,11 @@ main{
     main{
         padding: 0 5%;
         text-align: left;
+    }
+
+    main section{
+        background: url(../images/about.jpg);
+        background-size: cover;
+        height: 100vh;
     }
 }

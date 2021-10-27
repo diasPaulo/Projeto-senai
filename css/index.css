@@ -1,10 +1,5 @@
 @import url(./colors.css);
 
-.logo{
-    font-family: 'Italianno', cursive;
-    font-size: 4rem;
-}
-
 body{
     background: url(../images/home-back.jpg);
     background-size: cover;
