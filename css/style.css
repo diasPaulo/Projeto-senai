@@ -110,23 +110,26 @@ main h1 .logo{
     font-size: 3rem;
 }
 
-/* #about main section{
-    display: flex;
-    flex-direction: column;
+#about main section{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 4px;
     justify-content: center;
 }
 
 #about main section article{
-    margin: 8px 0;
+    margin: 0 8px;
+    max-width: 75ch;
+    text-align: justify;
 }
 
-#about main section article:first-child{
-    transform: rotate(-90deg);
+#about main section article p{
+    margin: 1rem 0;
 }
 
 #about main section article img{
-    height: 100vw;
-} */
+    max-width: 100%;
+}
 
 @media (min-width: 992px){
     header{
@@ -145,28 +148,16 @@ main h1 .logo{
     }
 
     #about main section{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
+        grid-template-columns: auto auto;
     }
 
-    #about main section article{
-        margin: 0 8px;
-    }
-
-    #about main section article p{
-        margin: 1rem 0;
+    #about main section article:first-child{
+        grid-column: 2 / 3;
+        grid-row: 1;
     }
 
     #about main section article:last-child{
-        width: 75ch;
-    }
-
-    #about main section .image{
-        background: url(../images/about2.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 700px;
-        width: 450px;
+        grid-column: 1 / 2;
+        grid-row: 1;
     }
 }
