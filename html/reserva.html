@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/menu.css">
-    <title>diCasa - Nosso Menu</title>
+    <title>diCasa - Reservas</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <script src="../script/all.min.js"></script>
 </head>
-<body id="menu">
+<body id="reservas">
     <div class="container">
         <header>
             <p>
@@ -73,15 +73,43 @@
             </div>
         </nav>
         <main>
-            <h1>Nosso Menu</h1>
-            <section class="card-container">
-                <article class="card">
-                    <div class="figure">
-
-                    </div>
-                    <div class="content">
-
-                    </div>
+            <h1>Reservas</h1>
+            <section>
+                <article>
+                    <img src="../images/reserve2.jpg" alt="Mesa posta com velas e cartão informando que a mesa está reservada">
+                </article>
+                <article>
+                    <form action="#">
+                        <div class="input-container">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="input-container">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="input-container">
+                            <label for="date">Data</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="input-container">
+                            <label for="time">Hora</label>
+                            <input type="time" name="hora" id="hora" min="18" max="22">
+                        </div>
+                        <div class="input-container">
+                            <label for="people">Nº de Pessoas</label>
+                            <input type="number" name="people" id="people" min="1">
+                        </div>
+                        <div class="input-container">
+                            <label for="msg">Mensagem</label>
+                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="button" type="submit">Reservar</button>
+                    </form>         
                 </article>
             </section>
         </main>

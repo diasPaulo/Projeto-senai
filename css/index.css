@@ -34,6 +34,7 @@ main h1{
     -1px -1px 4px var(--color4),
     -1px 1px 4px var(--color4),
     1px -1px 4px var(--color4);
+    margin: 0;
 }
 
 main h2{
