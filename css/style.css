@@ -182,6 +182,40 @@ main section article{
     margin: auto;
 }
 
+main section article p{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+main section article a{
+    text-decoration: none;
+    color: var(--color4);
+}
+
+main section article .info{
+    display: flex;
+    flex-direction: row;
+    margin: 32px;
+}
+
+main section article .info span{
+    font-size: 2.25rem;
+}
+
+main section article .info .info-content{
+    margin-left: 1rem;
+}
+
+main section article .info .info-content h2{
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+main section article .info .info-content p{
+    margin: 0;
+    text-align: left;
+}
+
 main section article form{
     display: flex;
     flex-direction: column;
@@ -205,8 +239,7 @@ main section article form .button{
     margin: .5rem 0;
 }
 
-main section article p{
-    margin: 1rem 0;
+#about main section article p{
     text-align: justify;
 }
 
@@ -261,6 +294,7 @@ footer ul a li{
 
     main section{
         grid-template-columns: auto auto;
+        justify-content: center;
     }
 
     main .chef-container{
@@ -296,6 +330,14 @@ footer ul a li{
         grid-row: 1;
     }
 
+    #contact main section article{
+        text-align: left;
+    }
+
+    #contact main section article p{
+        text-align: left;
+    }
+
     main section article form{
         display: grid;
         column-gap: .5rem;
@@ -305,6 +347,14 @@ footer ul a li{
         "date date time time people people"
         "msg msg msg msg msg msg"
         "button button button button button button";
+    }
+
+    #contact main section article form{
+        grid-template-areas: 
+        "name name"
+        "email phone"
+        "msg msg"
+        "button button";
     }
 
     main section article .input-container:nth-child(1){
@@ -331,7 +381,7 @@ footer ul a li{
         grid-area: people;
     }
 
-    main section article .input-container:nth-child(7){
+    main section article .input-container:last-of-type{
         grid-area: msg;
     }
 
