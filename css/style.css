@@ -175,11 +175,30 @@ main .chef-container .chef .chef-content ul a{
     font-size: 1.5rem;
 }
 
+main .card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+main .card-container .figure img{
+    width: 100%;
+    max-width: 400px;
+}
+
+main .card-container p{
+    margin: 4px 0;
+}
+
 main section article{
     margin: 0 8px;
     max-width: 75ch;
     text-align: center;
     margin: auto;
+}
+
+#events main section article ul{
+    margin-left: 2rem;
+    text-align: left;
 }
 
 main section article p{
@@ -310,14 +329,19 @@ footer ul a li{
         display: initial;
     }
 
-    main section article:first-child{
-        grid-column: 1 / 2;
-        grid-row: 1;
+    #menu main section{
+        display: initial;
     }
 
-    main section article:last-child{
-        grid-column: 2 / 3;
-        grid-row: 1;
+    main section .card-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main section .card-container .card{
+        max-width: 400px;
+        margin: 16px;
     }
 
     #about main section article:first-child{

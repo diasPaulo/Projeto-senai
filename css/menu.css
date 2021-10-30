@@ -68,6 +68,8 @@ nav .menuContent{
 
     background-color: #1d1f1ddd;
     border-radius: 25px;
+
+    z-index: 999;
 }
 
 #chkMenu:checked ~ .right .menuContent #closeChkMenu{
