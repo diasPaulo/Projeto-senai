@@ -95,7 +95,115 @@ header a{
         -1px -1px 2px var(--color3);
 }
 
-/* main */
+#chkMenu{
+    display: none;
+}
+
+nav{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #00924777;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color3);
+}
+
+nav .left a{
+    align-self: center;
+}
+
+nav .left a img{
+    height: 3rem;
+}
+
+nav .right{
+    align-self: center;
+}
+
+nav .menu{
+    font-size: 2.5rem;
+    margin: auto;
+    color: var(--color4);
+}
+
+nav .menuItens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menuContent{
+    display: none;
+}
+
+#chkMenu:checked ~ .right .menu{
+    display: none;
+}
+
+#chkMenu:checked ~ .right .menuContent{
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 4px;
+    right: 4px;
+
+    display: initial;
+
+    height: calc(100vh - 16px);
+    width: calc(100vw - 8px);
+
+    background-color: #1d1f1ddd;
+    border-radius: 25px;
+
+    z-index: 999;
+}
+
+#chkMenu:checked ~ .right .menuContent #closeChkMenu{
+    position: absolute;
+    font-size: 2rem;
+    top: 40px;
+    right: 16px;
+    color: var(--color3);
+}
+
+#chkMenu:checked ~ .right .menuContent .menuItens{
+    height: 100%;
+    margin: auto;
+}
+
+#chkMenu:checked ~ .right .menuContent .menuItens .button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 2px var(--color3),
+    1px -1px 2px var(--color3),
+    -1px 1px 2px var(--color3),
+    -1px -1px 2px var(--color3);
+    border: var(--color3);
+    margin: .5rem 0;
+}
+
+#chkMenu:checked ~ .right .menuContent .menuItens a{
+    margin: .5rem 0;
+}
+
+#chkMenu:checked ~ .right .menuContent .menuItens a li{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px var(--color4),
+    -1px -1px 4px var(--color4);
+}
+
+nav ul a{
+    margin: 0 1rem;
+}
+
+nav ul li{
+    list-style: none;
+}
 
 main{
     text-align: center;
@@ -119,18 +227,12 @@ main section{
     justify-content: center;
 }
 
-/* Retirado para chefs.css */
-
-/* Retirado para menu.css */
-
 main section article{
     margin: 0 8px;
     max-width: 75ch;
     text-align: center;
     margin: auto;
 }
-
-/* retirado para eventos.css */
 
 main section article p{
     margin: 1rem 0;
@@ -141,8 +243,6 @@ main section article a{
     text-decoration: none;
     color: var(--color4);
 }
-
-/* Retirado para contato.css */
 
 main section article form{
     display: flex;
@@ -166,8 +266,6 @@ main section article form textarea{
 main section article form .button{
     margin: .5rem 0;
 }
-
-/* Retirado para sobre.css */
 
 main section article img{
     max-width: 100%;
@@ -209,6 +307,35 @@ footer ul a li{
         font-size: 1.1rem;
     }
 
+    nav{
+        padding: 0 5%;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: var(--color4);
+    }
+
+    nav .right .menu,
+    #closeChkMenu{
+        display: none;
+    }
+
+    nav .right .menuContent{
+        display: initial;
+    }
+
+    nav .right .menuContent .menuItens{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav .right .menuContent .menuItens a{
+        margin: 0 8px;
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+
     main{
         padding: 0 5%;
         text-align: left;
@@ -218,18 +345,6 @@ footer ul a li{
         grid-template-columns: auto auto;
         justify-content: center;
     }
-
-    /* Retirado para chefs.css */
-
-    /* Retirado para menu.css */
-
-    /* Retirado para sobre.css */
-
-    /* Retirado para contato.css */
-
-    /* Retirado para reserva.css */
-
-    /* Retirado para contato.css */
 
     main section article .input-container:nth-child(1){
         grid-area: name;

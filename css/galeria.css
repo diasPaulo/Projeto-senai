@@ -1,0 +1,45 @@
+main section img{
+    max-width: 100%;
+}
+
+main section input{
+    display: none;
+}
+
+@media (min-width: 992px){
+    main section{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    main section img{
+        width: 55ch;
+    }
+
+    #galeria-1:checked ~ #chkGaleria-1,
+    #galeria-2:checked ~ #chkGaleria-2,
+    #galeria-3:checked ~ #chkGaleria-3,
+    #galeria-4:checked ~ #chkGaleria-4,
+    #galeria-5:checked ~ #chkGaleria-5{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #1d1f1df5;
+        transition: all .5s ease-out;
+    }
+
+    #galeria-1:checked ~ #chkGaleria-1 img,
+    #galeria-2:checked ~ #chkGaleria-2 img,
+    #galeria-3:checked ~ #chkGaleria-3 img,
+    #galeria-4:checked ~ #chkGaleria-4 img,
+    #galeria-5:checked ~ #chkGaleria-5 img{
+        width: auto;
+    }
+}
