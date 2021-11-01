@@ -6,6 +6,15 @@ main section input{
     display: none;
 }
 
+main section label .backward,
+main section label .forward,
+main section label .radioClose{
+    display: none;
+    color: var(--color3);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 @media (min-width: 992px){
     main section{
         display: flex;
@@ -14,6 +23,7 @@ main section input{
     }
     main section img{
         width: 55ch;
+        cursor: pointer;
     }
 
     #galeria-1:checked ~ #chkGaleria-1,
@@ -21,7 +31,8 @@ main section input{
     #galeria-3:checked ~ #chkGaleria-3,
     #galeria-4:checked ~ #chkGaleria-4,
     #galeria-5:checked ~ #chkGaleria-5{
-        position: absolute;
+        z-index: 999;
+        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
@@ -32,7 +43,39 @@ main section input{
         justify-content: center;
 
         background-color: #1d1f1df5;
-        transition: all .5s ease-out;
+    }
+
+    #galeria-1:checked ~ #chkGaleria-1 .radioClose,
+    #galeria-2:checked ~ #chkGaleria-2 .radioClose,
+    #galeria-3:checked ~ #chkGaleria-3 .radioClose,
+    #galeria-4:checked ~ #chkGaleria-4 .radioClose,
+    #galeria-5:checked ~ #chkGaleria-5 .radioClose{
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    #galeria-1:checked ~ #chkGaleria-1 .backward,
+    #galeria-2:checked ~ #chkGaleria-2 .backward,
+    #galeria-3:checked ~ #chkGaleria-3 .backward,
+    #galeria-4:checked ~ #chkGaleria-4 .backward,
+    #galeria-5:checked ~ #chkGaleria-5 .backward{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+    }
+
+    #galeria-1:checked ~ #chkGaleria-1 .forward,
+    #galeria-2:checked ~ #chkGaleria-2 .forward,
+    #galeria-3:checked ~ #chkGaleria-3 .forward,
+    #galeria-4:checked ~ #chkGaleria-4 .forward,
+    #galeria-5:checked ~ #chkGaleria-5 .forward{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 50px;
     }
 
     #galeria-1:checked ~ #chkGaleria-1 img,
@@ -40,6 +83,7 @@ main section input{
     #galeria-3:checked ~ #chkGaleria-3 img,
     #galeria-4:checked ~ #chkGaleria-4 img,
     #galeria-5:checked ~ #chkGaleria-5 img{
-        width: auto;
+        width: 100%;
+        cursor: default;
     }
 }
