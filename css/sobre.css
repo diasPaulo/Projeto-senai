@@ -1,0 +1,15 @@
+main section article p{
+    text-align: justify;
+}
+
+@media (min-width: 992px){
+    main section article:first-child{
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    main section article:last-child{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+}

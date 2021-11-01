@@ -95,6 +95,8 @@ header a{
         -1px -1px 2px var(--color3);
 }
 
+/* main */
+
 main{
     text-align: center;
     padding: 0 1rem;
@@ -117,77 +119,9 @@ main section{
     justify-content: center;
 }
 
-main .chef-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-}
+/* Retirado para chefs.css */
 
-main .chef-container .chef{
-    position: relative;
-    width: 100%;
-    max-width: 450px;
-}
-
-main .chef-container .chef img{
-    width: 100%;
-    max-width: 450px;
-}
-
-main .chef-container .chef .chef-content{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 10px 0;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    color: var(--color3);
-    background-color: #1d1f1daa;
-    text-shadow: 1px 1px 2px var(--color4),
-        1px -1px 2px var(--color4),
-        -1px 1px 2px var(--color4),
-        -1px -1px 2px var(--color4);
-}
-
-main .chef-container .chef .chef-content h1{
-    margin: 0;
-}
-
-main .chef-container .chef .chef-content p{
-    margin-top: -2px;
-    margin-bottom: 4px;
-    font-style: italic;
-}
-
-main .chef-container .chef .chef-content ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-main .chef-container .chef .chef-content ul a{
-    text-decoration: none;
-    color: var(--color3);
-    margin: 0 8px;
-    font-size: 1.5rem;
-}
-
-main .card-container{
-    display: flex;
-    flex-direction: column;
-}
-
-main .card-container .figure img{
-    width: 100%;
-    max-width: 400px;
-}
-
-main .card-container p{
-    margin: 4px 0;
-}
+/* Retirado para menu.css */
 
 main section article{
     margin: 0 8px;
@@ -196,10 +130,7 @@ main section article{
     margin: auto;
 }
 
-#events main section article ul{
-    margin-left: 2rem;
-    text-align: left;
-}
+/* retirado para eventos.css */
 
 main section article p{
     margin: 1rem 0;
@@ -211,29 +142,7 @@ main section article a{
     color: var(--color4);
 }
 
-main section article .info{
-    display: flex;
-    flex-direction: row;
-    margin: 32px;
-}
-
-main section article .info span{
-    font-size: 2.25rem;
-}
-
-main section article .info .info-content{
-    margin-left: 1rem;
-}
-
-main section article .info .info-content h2{
-    margin-bottom: 4px;
-    text-align: left;
-}
-
-main section article .info .info-content p{
-    margin: 0;
-    text-align: left;
-}
+/* Retirado para contato.css */
 
 main section article form{
     display: flex;
@@ -258,9 +167,7 @@ main section article form .button{
     margin: .5rem 0;
 }
 
-#about main section article p{
-    text-align: justify;
-}
+/* Retirado para sobre.css */
 
 main section article img{
     max-width: 100%;
@@ -271,10 +178,6 @@ footer{
     color: var(--color4);
     text-align: center;
     padding: .75rem 0;
-}
-
-#home footer{
-    background-color: #F1F2F1c9;
 }
 
 footer ul{
@@ -316,70 +219,17 @@ footer ul a li{
         justify-content: center;
     }
 
-    main .chef-container{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+    /* Retirado para chefs.css */
 
-    main .chef-container .chef .chef-content{
-        display: none;
-    }
+    /* Retirado para menu.css */
 
-    main .chef-container  .chef:hover .chef-content{
-        display: initial;
-    }
+    /* Retirado para sobre.css */
 
-    #menu main section{
-        display: initial;
-    }
+    /* Retirado para contato.css */
 
-    main section .card-container{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    /* Retirado para reserva.css */
 
-    main section .card-container .card{
-        max-width: 400px;
-        margin: 16px;
-    }
-
-    #about main section article:first-child{
-        grid-column: 2 / 3;
-        grid-row: 1;
-    }
-
-    #about main section article:last-child{
-        grid-column: 1 / 2;
-        grid-row: 1;
-    }
-
-    #contact main section article{
-        text-align: left;
-    }
-
-    #contact main section article p{
-        text-align: left;
-    }
-
-    main section article form{
-        display: grid;
-        column-gap: .5rem;
-        grid-template-areas: 
-        "name name name name name name"
-        "email email email phone phone phone"
-        "date date time time people people"
-        "msg msg msg msg msg msg"
-        "button button button button button button";
-    }
-
-    #contact main section article form{
-        grid-template-areas: 
-        "name name"
-        "email phone"
-        "msg msg"
-        "button button";
-    }
+    /* Retirado para contato.css */
 
     main section article .input-container:nth-child(1){
         grid-area: name;
