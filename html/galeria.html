@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/galeria.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../images/fanicon.ico">
     <title>diCasa - Galeria</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -46,150 +48,60 @@
                     </h1>
                 </a>
             </div>
-            <input type="checkbox" name="chkMenu" id="chkMenu">
             <div class="right">
-                <label for="chkMenu">
-                    <span class="material-icons menu">
-                        menu
-                    </span>
-                </label>
-                <div class="menuContent">
+                <span class="material-icons menu">
+                    menu
+                </span>
+                <div class="menuContent" id="menuContent">
                     <label for="chkMenu">
                         <span class="material-icons" id="closeChkMenu">
                             close
                         </span>
                     </label>
                     <ul class="menuItens">
-                        <a href="../index.html"><li>Home</li></a>
-                        <a href="./sobre.html"><li>Sobre</li></a>
-                        <a href="./menu.html"><li>Menu</li></a>
-                        <a href="./eventos.html"><li>Eventos</li></a>
-                        <a href="./chefs.html"><li>Chefs</li></a>
-                        <a href="./galeria.html"><li>Galeria</li></a>
-                        <a href="./contato.html"><li>Contato</li></a>
-                        <a href="./reserva.html"><li><button class="button">Reservas</button></li></a>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./eventos.html">Eventos</a></li>
+                        <li><a href="./chefs.html">Chefs</a></li>
+                        <li><a href="./galeria.html">Galeria</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                        <li><a href="./reserva.html"><button class="button">Reservas</button></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <main>
             <h1>Galeria</h1>
-            <section>
-                <input type="radio" name="galeria" id="galeria-0" checked>
-
-                <input type="radio" name="galeria" id="galeria-1">
-                <label for="galeria-1" id="chkGaleria-1">
-                    <!-- Fechar tela cheia -->
-                    <label for="galeria-0">
-                        <span class="material-icons radioClose">
-                            close
-                        </span>
-                    </label>
-                    <!-- Ir para imagem anterior -->
-                    <label for="galeria-5">
-                        <span class="material-icons backward">
-                            chevron_left
-                        </span>
-                    </label>
+            <section>        
+                <div class="imgBox">
+                    <span class="material-icons closeImg">
+                        close
+                    </span>
+                    <span class="material-icons backward">
+                        chevron_left
+                    </span>
+                    <span class="material-icons forward">
+                        chevron_right
+                    </span>
                     <img src="../images/galeria-1.jpg" alt="Galeria 1">
-                    <!-- Ir para próxima imagem -->
-                    <label for="galeria-2">
-                        <span class="material-icons forward">
-                            chevron_right
-                        </span>
-                    </label>
-                </label>
-
-                <input type="radio" name="galeria" id="galeria-2">
-                <label for="galeria-2" id="chkGaleria-2">
-                    <label for="galeria-0">
-                        <span class="material-icons radioClose">
-                            close
-                        </span>
-                    </label>
-                    <label for="galeria-1">
-                        <span class="material-icons backward">
-                            chevron_left
-                        </span>
-                    </label>
                     <img src="../images/galeria-2.jpg" alt="Galeria 2">
-                    <label for="galeria-3">
-                        <span class="material-icons forward">
-                            chevron_right
-                        </span>
-                    </label>
-                </label>
-
-                <input type="radio" name="galeria" id="galeria-3">
-                <label for="galeria-3" id="chkGaleria-3">
-                    <label for="galeria-0">
-                        <span class="material-icons radioClose">
-                            close
-                        </span>
-                    </label>
-                    <label for="galeria-2">
-                        <span class="material-icons backward">
-                            chevron_left
-                        </span>
-                    </label>
                     <img src="../images/galeria-3.jpg" alt="Galeria 3">
-                    <label for="galeria-4">
-                        <span class="material-icons forward">
-                            chevron_right
-                        </span>
-                    </label>
-                </label>
-
-                <input type="radio" name="galeria" id="galeria-4">
-                <label for="galeria-4" id="chkGaleria-4">
-                    <label for="galeria-0">
-                        <span class="material-icons radioClose">
-                            close
-                        </span>
-                    </label>
-                    <label for="galeria-3">
-                        <span class="material-icons backward">
-                            chevron_left
-                        </span>
-                    </label>
                     <img src="../images/galeria-4.jpg" alt="Galeria 4">
-                    <label for="galeria-5">
-                        <span class="material-icons forward">
-                            chevron_right
-                        </span>
-                    </label>
-                </label>
-
-                <input type="radio" name="galeria" id="galeria-5">
-                <label for="galeria-5" id="chkGaleria-5">
-                    <label for="galeria-0">
-                        <span class="material-icons radioClose">
-                            close
-                        </span>
-                    </label>
-                    <label for="galeria-4">
-                        <span class="material-icons backward">
-                            chevron_left
-                        </span>
-                    </label>
                     <img src="../images/galeria-5.jpg" alt="Galeria 5">
-                    <label for="galeria-1">
-                        <span class="material-icons forward">
-                            chevron_right
-                        </span>
-                    </label>
-                </label>
-                
+                </div>
             </section>
         </main>
         <footer>
             <ul>
-                <a href="#"><li><i class="fab fa-facebook-f"></i></li></a>
-                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
-                <a href="#"><li><i class="far fa-envelope"></i></li></a>
-                <a href="#"><li><i class="fab fa-whatsapp"></i></i></li></a>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></i></a></li>
             </ul>
         </footer>
     </div>
+    <script src="../script/galeria.js"></script>
+    <script src="../script/javascript.js"></script>
 </body>
 </html>

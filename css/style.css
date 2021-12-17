@@ -14,24 +14,6 @@
     font-size: 3.75rem;
 }
 
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1rem;
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga';
-}
-
 .button{
     cursor: pointer;
     background-color: var(--color1);
@@ -141,11 +123,7 @@ nav .menuContent{
     display: none;
 }
 
-#chkMenu:checked ~ .right .menu{
-    display: none;
-}
-
-#chkMenu:checked ~ .right .menuContent{
+.openMenuContent{
     position: absolute;
     top: 8px;
     bottom: 8px;
@@ -163,20 +141,22 @@ nav .menuContent{
     z-index: 999;
 }
 
-#chkMenu:checked ~ .right .menuContent #closeChkMenu{
-    position: absolute;
-    font-size: 2rem;
-    top: 40px;
-    right: 16px;
-    color: var(--color3);
-}
-
-#chkMenu:checked ~ .right .menuContent .menuItens{
+.openMenuItens{
     height: 100%;
     margin: auto;
 }
 
-#chkMenu:checked ~ .right .menuContent .menuItens .button{
+.openMenuItens a{
+    margin: .5rem 0;
+}
+
+.openMenuItens li a{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px var(--color4),
+    -1px -1px 4px var(--color4);
+}
+
+.openButton{
     font-size: 1.5rem;
     font-weight: 500;
     box-shadow: 1px 1px 2px var(--color3),
@@ -187,22 +167,17 @@ nav .menuContent{
     margin: .5rem 0;
 }
 
-#chkMenu:checked ~ .right .menuContent .menuItens a{
-    margin: .5rem 0;
-}
-
-#chkMenu:checked ~ .right .menuContent .menuItens a li{
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 4px var(--color4),
-    -1px -1px 4px var(--color4);
-}
-
-nav ul a{
-    margin: 0 1rem;
+#closeChkMenu{
+    position: absolute;
+    font-size: 2rem;
+    top: 40px;
+    right: 16px;
+    color: var(--color3);
 }
 
 nav ul li{
     list-style: none;
+    margin: 0 1rem;
 }
 
 main{
@@ -218,6 +193,21 @@ main h1{
 main h1 .logo{
     font-weight: 800;
     font-size: 3rem;
+}
+
+main h1 #btn_openEditTitle,
+main h1 #btn_closeEditTitle{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+main h1 #btn_openEditTitle{
+    color: var(--color2);
+}
+
+main h1 #btn_closeEditTitle{
+    color: var(--color1);
+    display: none;
 }
 
 main section{
@@ -292,7 +282,7 @@ footer ul a{
     margin: 0 1.5rem;
 }
 
-footer ul a li{
+footer ul li{
     list-style: none;
 }
 
@@ -331,7 +321,7 @@ footer ul a li{
     }
 
     nav .right .menuContent .menuItens a{
-        margin: 0 8px;
+        margin: 0;
         font-size: 1.125rem;
         font-weight: bold;
     }

@@ -1,0 +1,90 @@
+[
+    {
+        "id": 0,
+        "tipo": "Salada",
+        "nome": "Salada da Fazenda",
+        "descricao": "Queijo feta, pimentão e cebola.",
+        "imagem": "../images/salada-1.png",
+        "alt": "Salada 1"
+    },
+    {
+        "id": 1,
+        "tipo": "Salada",
+        "nome": "Salada de Atum",
+        "descricao": "Atum, pimentão e cebola.",
+        "imagem": "../images/salada-2.png",
+        "alt": "Salada 2"
+    },
+    {
+        "id": 2,
+        "tipo": "Salada",
+        "nome": "Salada de Mussarela",
+        "descricao": "Mussarella e tomate fresco.",
+        "imagem": "../images/salada-3.png",
+        "alt": "Salada 3"
+    },
+    {
+        "id": 3,
+        "tipo": "Prato Principal",
+        "nome": "Sopa de Batata Doce",
+        "descricao": "Cenoura, aipo, cebolas, alho, batata-doce, chouriço, pimenta, salsa, curry, sal e pimenta.",
+        "imagem": "../images/sopa-1.png",
+        "alt": "Sopa 1"
+    },
+    {
+        "id": 4,
+        "tipo": "Prato Principal",
+        "nome": "Carne de Porco à Marroquina",
+        "descricao": "Arroz integral, carne de porco e molho de vegetais.",
+        "imagem": "../images/principal-1.png",
+        "alt": "Principal 1"
+    },
+    {
+        "id": 5,
+        "tipo": "Prato Principal",
+        "nome": "Salada de Salmão com Couve de Bruxelas",
+        "descricao": "Salmão com alho e salsa servido com salada doce e apimentada com couve de Bruxelas caramelizada e rúcula.",
+        "imagem": "../images/principal-2.png",
+        "alt": "Principal 2"
+    },
+    {
+        "id": 6,
+        "tipo": "Prato Principal",
+        "nome": "Salmão e Batata",
+        "descricao": "Salmão servido com tomate cereja e batata com mostarda e salsa.",
+        "imagem": "../images/principal-3.png",
+        "alt": "Principal 3"
+    },
+    {
+        "id": 7,
+        "tipo": "Prato Principal",
+        "nome": "Orecchiette com Pesto de Pimenta Vermelha",
+        "descricao": "Orecchiette fresco, tomate seco, pimenta vermelha e ricota dura.",
+        "imagem": "../images/principal-4.png",
+        "alt": "Principal 4"
+    },
+    {
+        "id": 8,
+        "tipo": "Prato Principal",
+        "nome": "Espaguete à Bolonhesa",
+        "descricao": "Espaguete, bacon, carne bovina e suína picada, tomates picados, extrato de tomate e queijo parmesão.",
+        "imagem": "../images/principal-5.png",
+        "alt": "Principal 5"
+    },
+    {
+        "id": 9,
+        "tipo": "Sobremesa",
+        "nome": "Mousse de Chocolate com Abacate",
+        "descricao": "Delicioso mousse de chocolate e abacate.",
+        "imagem": "../images/sobremesa-1.png",
+        "alt": "Sobremesa 1"
+    },
+    {
+        "id": 10,
+        "tipo": "Sobremesa",
+        "nome": "Pãezinhos de mirtilo",
+        "descricao": "Os deliciosos pãeszinhos super recheados com mirtilo.",
+        "imagem": "../images/sobremesa-2.png",
+        "alt": "Sobremesa 2"
+    }
+]
