@@ -13,8 +13,9 @@ Tem por objetivo de atrair os clientes amantes da comida italiana além de conta
 
 O projeto conta com wireframes na qual foram utilizados como base do projeto.
 
+<p align="center">
 <img src="https://github.com/diasPaulo/projetoSenai/blob/main/wireframes/Desktop.png?raw=true" alt="Wireframe da versão Desktop" height="350" /> <img src="https://github.com/diasPaulo/projetoSenai/blob/main/wireframes/Mobile.png?raw=true" alt="Wireframe da versão Mobile" height="350" />
-
+</p>
 
 ## Tecnologias
 
