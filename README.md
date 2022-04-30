@@ -20,5 +20,3 @@ O projeto conta com wireframes na qual foram utilizados como base do projeto.
 ## Tecnologias
 
 Em seu desenvolvimento foi utilizado HTML, CSS e Javascript.
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=diasPaulo&repo=projetoSenai&layout=compact)](https://github.com/diasPaulo/projetoSenai)
